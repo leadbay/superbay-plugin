@@ -1,0 +1,21 @@
+{
+  "name": "superbay",
+  "version": "0.3.0",
+  "description": "Superbay: see what agents see and predict about you, create your profile, and meet people who can help, right in your chat. This plugin adds Superbay to this app only; for claude.ai and the Claude desktop and phone apps, add the connector at superbay.ai/add/claude.",
+  "author": {
+    "name": "Leadbay",
+    "url": "https://superbay.ai"
+  },
+  "homepage": "https://superbay.ai",
+  "license": "MIT",
+  "mcpServers": {
+    "superbay": {
+      "type": "http",
+      "url": "https://superbay.ai/claude"
+    }
+  },
+  "repository": "https://github.com/leadbay/superbay-plugin",
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://superbay.ai/privacy",
+  "termsOfServiceUrl": "https://superbay.ai/terms"
+}
