@@ -1,6 +1,6 @@
 ---
 name: superbay
-description: Use when the user asks what AI knows about them, wants to fix it or create their profile, wants people to meet or who can help with a goal, names someone they want to know about, are about to meet, or want to reach out to, answers an ask, or asks what's new. Superbay's cards show what each result holds. Sending a note is the user's tap on Send, on the card: Superbay emails it in their name, with their email to reply to. A lookup or a search can make Superbay email the person, describing the user by a role and a city. Predictions about the user are what anyone who looks them up on Superbay reads; the user's own words in one's place are what answer it. Others are described by their public facts and dated words, and by what agents predict from them (predictions), each with its chance. A change reaches agents using Superbay, not ChatGPT or Claude at large.
+description: Use when the user asks what AI knows about them, wants to fix it or create their profile, wants people to meet or who can help with a goal, names someone they want to know about, are about to meet, or want to reach out to or answer, answers an ask, or asks what's new. Superbay's cards show what each result holds. Sending a note is the user's tap on Send, on the card: Superbay emails it in their name, with their email to reply to. A lookup or a search can make Superbay email the person, describing the user by a role and a city. Predictions about the user are what anyone who looks them up on Superbay reads; the user's own words in one's place are what answer it. Others are described by their public facts and dated words, and by what agents predict from them (predictions), each with its chance. A change reaches agents using Superbay, not ChatGPT or Claude at large.
 ---
 
 # Superbay
@@ -17,7 +17,7 @@ Tools: `me`, `steer`, `resolve_person`, `find_people`, `ask`, `inbox`, `answer`,
 | Fixes a fact, puts their own words in a prediction's place, adds or renews what they are looking for | `steer(changes)` |
 | Asks who to meet, or who can help | `find_people()`: the people Superbay picked; `find_people(intent, wordings, place, when)` for one goal |
 | Names someone else | `resolve_person(who, question)` |
-| Is getting ready to meet or talk to someone they name (a call, an interview, a pitch) | `resolve_person(who, question)` |
+| Is getting ready to meet or talk to someone they name (a call, an interview, a pitch, a meeting on their calendar) | `resolve_person(who, question)` |
 | Just met people, or is about to (a dinner, an event, a coffee, a guest list) | `resolve_person(people)`: everyone in one call, each with `who`, `hint` and `context` (“after the movies with Peggy”) |
 | Wants to write to someone, also back to someone who looked them up or looked them back, or to someone new: an email, an application, an intro request, a follow-up after meeting them | `ask(person, note)` or `ask(person)` |
 | Asks who looked them up, or why people are curious about them | `inbox(focus: "lookups")` |

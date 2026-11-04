@@ -17,5 +17,7 @@
   "repository": "https://github.com/leadbay/superbay-plugin",
   "icon": "./assets/icon.png",
   "privacyPolicyUrl": "https://superbay.ai/privacy",
+  "supportUrl": "https://github.com/leadbay/superbay-plugin#support",
+  "documentationUrl": "https://github.com/leadbay/superbay-plugin#readme",
   "termsOfServiceUrl": "https://superbay.ai/terms"
 }
