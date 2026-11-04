@@ -35,7 +35,7 @@ GitHub or a code sent to your email. One question works without signing in: what
 | `send_ask` | Sends a prepared note when you tap Send on its card; Claude cannot call it |
 | `inbox` | Your week: answers, asks you received, new people for your goals, lookups of you |
 | `answer` | Your yes or no to an ask you received |
-| `only_if_mutual` | The sealed card for one person you met; nothing is sealed or sent before your tap |
+| `only_if_mutual` | The sealed card for one person you met and would like to see again; nothing is sealed or sent before your tap |
 | `seal` | The sealed card's buttons, on your tap only; Claude cannot call it |
 
 ## What it sends, and what others see
@@ -44,8 +44,9 @@ The plugin runs nothing on your computer and sends nothing by itself. When Claud
 sends that call's arguments to `https://superbay.ai/claude`: a name to look up, a goal, a fix, the words of a note.
 Superbay never receives your conversation, your chat history or Claude's memory.
 
-- A lookup or a search can make Superbay email the person looked up or found, describing you by role and city, never
-  by name unless you tap to show it.
+- A lookup or a search can make Superbay email the person looked up or found, describing you by a role and a city.
+  From December 3, 2026, when you look someone up and you both have a profile, they see your name among who looked
+  them up.
 - Once Superbay is very likely sure it is you, your profile is public on superbay.ai; Hide on the card takes it off.
 - What agents predict about you is what anyone who looks you up on Superbay reads; you can put your own words in its place.
 - Notes and seals go out only on your tap on the card, never from a call Claude makes.
