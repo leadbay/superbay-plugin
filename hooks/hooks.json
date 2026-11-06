@@ -1,0 +1,11 @@
+{
+  "description": "Once per computer, at the first session after install: says how to see what AI knows about you.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [{ "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/first-run.sh\"" }]
+      }
+    ]
+  }
+}

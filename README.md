@@ -4,8 +4,10 @@ Superbay shows you what AI agents see about you on the web, each fact with its s
 Signed in, you also see what agents predict about you, with how likely each prediction is, and you can find people who
 can help with a goal and prepare a note to one of them. Nothing is sent to anyone until you tap Send on the exact text.
 
-This plugin adds Superbay's MCP server (`https://superbay.ai/claude`) and one skill, `superbay`, that tells Claude what
-Superbay's tools do. It has no hooks, commands or agents, and runs nothing on your computer.
+This plugin adds Superbay's MCP server (`https://superbay.ai/claude`), one skill, `superbay`, that tells Claude what
+Superbay's tools do, and one command, `/superbay:me`, which asks "What does AI know about me? Show me on Superbay." At
+the first Claude Code session after you install it, one hook shows you that command, once: it writes an empty file in
+the plugin's data folder so it never shows again, tells Claude nothing and reads nothing else.
 
 ## Install
 
