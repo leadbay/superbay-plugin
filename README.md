@@ -44,9 +44,6 @@ The plugin runs nothing on your computer and sends nothing by itself. When Claud
 sends that call's arguments to `https://superbay.ai/claude`: a name to look up, a goal, a fix, the words of a note.
 Superbay never receives your conversation, your chat history or Claude's memory.
 
-- A lookup or a search can make Superbay email the person looked up or found, describing you by a role and a city.
-  From December 3, 2026, when you look someone up and you both have a profile, they see your name among who looked
-  them up.
 - Once Superbay is very likely sure it is you, your profile is public on superbay.ai; Hide on the card takes it off.
 - What agents predict about you is what anyone who looks you up on Superbay reads; you can put your own words in its place.
 - Notes and seals go out only on your tap on the card, never from a call Claude makes.
