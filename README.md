@@ -16,7 +16,8 @@ In Claude Code:
 /plugin install superbay@superbay
 ```
 
-On claude.ai and in the Claude desktop and mobile apps, add the Superbay connector instead: superbay.ai/add/claude.
+On claude.ai: Customize > Plugins > Add marketplace, enter `leadbay/superbay-plugin`, then install Superbay. The skill
+and the connector come together.
 
 ## Sign in
 

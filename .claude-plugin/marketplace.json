@@ -8,7 +8,7 @@
     {
       "name": "superbay",
       "source": "./",
-      "description": "Superbay: see what agents see and predict about you, create your profile, and meet people who can help, right in your chat. This plugin adds Superbay to this app only; for claude.ai and the Claude desktop and phone apps, add the connector at superbay.ai/add/claude."
+      "description": "Superbay: see what agents see and predict about you, create your profile, and meet people who can help, right in your chat. On claude.ai, add it in Customize > Plugins > Add marketplace: leadbay/superbay-plugin; the skill and the connector come together."
     }
   ],
   "metadata": {
