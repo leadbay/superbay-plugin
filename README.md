@@ -29,7 +29,7 @@ GitHub or a code sent to your email. One question works without signing in: what
 | Tool | What it does |
 |---|---|
 | `me` | What agents see about you, with sources; signed in, what they predict about you and your profile |
-| `steer` | Your changes: a fact fixed, a prediction answered in your own words, what you're looking for, your settings, the people who matter to you |
+| `steer` | Your changes: a fact fixed, where you're based, a line on your profile (what you're doing now, looking for, offering, a plan), a prediction answered in your own words, your settings, the people who matter to you |
 | `resolve_person` | What agents see about someone you name, from their public pages |
 | `find_people` | People who can help with a goal you state, each with their own dated public words |
 | `ask` | Prepares a note to one person; it sends nothing |
