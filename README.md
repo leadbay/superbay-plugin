@@ -29,11 +29,11 @@ GitHub or a code sent to your email. One question works without signing in: what
 | Tool | What it does |
 |---|---|
 | `me` | What agents see about you, with sources; signed in, what they predict about you and your profile |
-| `steer` | Your changes: a fact fixed, where you're based, a line on your profile (what you're doing now, looking for, offering, a plan), a prediction answered in your own words, your settings, the people who matter to you |
+| `steer` | Your changes: a fact fixed, where you're based, a line on your profile (what you're doing now, looking for, offering, a plan), a prediction answered in your own words, your settings, the people who matter to you, an ask to people you know and your front door (what your AI does for others when an ask reaches you) |
 | `resolve_person` | What agents see about someone you name, from their public pages |
 | `find_people` | People who can help with a goal you state, each with their own dated public words |
-| `ask` | Prepares a note to one person; it sends nothing |
-| `send_ask` | Sends a prepared note when you tap Send on its card; Claude cannot call it |
+| `ask` | Prepares a note to one person, or your answer to an ask that reached you; it sends nothing |
+| `send_ask` | Sends a prepared note or answer when you tap Send on its card; Claude cannot call it |
 | `inbox` | Your week: answers, asks you received, new people for your goals, lookups of you; your feed and who matters to you |
 | `update_card` | What Claude adds to a card it drew: questions, a pick, a note, the rows of your feed |
 | `contribute` | What public pages Claude read said about a person, each with its page and quote |
@@ -56,7 +56,7 @@ receives the conversation, the chat history, Claude's memory, or the recordings,
 
 - Once Superbay is very likely sure it is you, your profile is public on superbay.ai; Hide on the card takes it off.
 - What agents predict about you is what anyone who looks you up on Superbay reads; you can put your own words in its place.
-- Notes and seals go out only on your tap on the card, never from a call Claude makes.
+- Notes, answers, asks and seals go out only on your tap on the card, never from a call Claude makes; in Claude Code, where no card is drawn, an ask or an answer goes out once you say yes to its words.
 
 Privacy policy: https://superbay.ai/privacy. Terms: https://superbay.ai/terms. Anyone, member or not, can see, fix or
 remove what Superbay holds about them: https://superbay.ai/notice#remove.

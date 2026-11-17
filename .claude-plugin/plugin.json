@@ -1,6 +1,6 @@
 {
   "name": "superbay",
-  "version": "0.6.4",
+  "version": "0.7.0",
   "description": "Superbay: see what agents see and predict about you, create your profile, and meet people who can help, right in your chat. On claude.ai, add it in Customize > Plugins > Add marketplace: leadbay/superbay-plugin; the skill and the connector come together.",
   "author": {
     "name": "Leadbay",
