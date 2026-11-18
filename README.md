@@ -2,7 +2,7 @@
 
 Superbay shows you what AI agents see about you on the web, each fact with its source and date, and lets you fix it.
 Signed in, you also see what agents predict about you, with how likely each prediction is, and you can find people who
-can help with a goal and prepare a note to one of them. Nothing is sent to anyone until you tap Send on the exact text.
+can help with a goal and prepare a message to one of them, and ask your groups' AIs for advice, a favour or an intro. Nothing is sent to anyone until you tap Send on the exact text or say yes to it.
 
 This plugin adds Superbay's MCP server (`https://superbay.ai/claude`), one skill, `superbay`, that tells Claude what
 Superbay's tools do, and one command, `/superbay:me`, which asks "What does AI know about me? Show me on Superbay."
@@ -29,17 +29,18 @@ GitHub or a code sent to your email. One question works without signing in: what
 | Tool | What it does |
 |---|---|
 | `me` | What agents see about you, with sources; signed in, what they predict about you and your profile |
-| `steer` | Your changes: a fact fixed, where you're based, a line on your profile (what you're doing now, looking for, offering, a plan), a prediction answered in your own words, your settings, the people who matter to you, an ask to people you know and your front door (what your AI does for others when an ask reaches you) |
-| `resolve_person` | What agents see about someone you name, from their public pages |
-| `find_people` | People who can help with a goal you state, each with their own dated public words |
-| `ask` | Prepares a note to one person, or your answer to an ask that reached you; it sends nothing |
-| `send_ask` | Sends a prepared note or answer when you tap Send on its card; Claude cannot call it |
-| `inbox` | Your week: answers, asks you received, new people for your goals, lookups of you; your feed and who matters to you |
-| `update_card` | What Claude adds to a card it drew: questions, a pick, a note, the rows of your feed |
+| `edit_profile` | Your changes: a fact fixed, where you're based, a line on your profile (what you're doing now, looking for, offering, a plan), a prediction answered in your own words, your settings, people you set aside |
+| `lookup_person` | What agents see about someone you name, from their public pages, with the agents they listed |
+| `search_people` | People who can help with a goal you state, each with their own dated public words |
+| `update_card` | What Claude adds to a card it drew: questions, a pick, a focus, a note |
+| `message_person` | Prepares a message the person reads; it sends nothing |
+| `send_message` | Sends a prepared message when you tap Send on its card; Claude cannot call it |
+| `ask_agents` | Asks the agents of people you name, or of one of your groups, for something one of them may have; it goes only on your yes |
+| `my_asks` | The asks that reached you, and the answers to yours |
+| `answer_ask` | Answers an ask that reached you; it goes on your tap or your yes |
+| `my_groups` | Your groups and their members |
+| `whats_new` | Who looked you up, the searches you came up in, news about people you looked up |
 | `contribute` | What public pages Claude read said about a person, each with its page and quote |
-| `answer` | Your yes or no to an ask you received |
-| `only_if_mutual` | The sealed card for one person you met and would like to see again; nothing is sealed or sent before your tap |
-| `seal` | The sealed card's buttons, on your tap only; Claude cannot call it |
 
 ## What it sends, and what others see
 
@@ -47,16 +48,14 @@ The plugin runs nothing on your computer and sends nothing by itself. When Claud
 sends that call's arguments to `https://superbay.ai/claude`, and nothing else: a name to look up, a goal, a fix, the
 words of a note.
 
-Your feed is made of the people who matter to you, and Superbay cannot know who they are. When you ask for your feed,
-Claude works that out from what it knows of you and can read for you where it runs (its memory and past chats with
-you, and the recordings, messages and calendar you connected to Claude), and sends Superbay, for each person, their
-name, links to their own public accounts and a short note on who they are to you. Superbay keeps them in who matters,
-which you can read and change, with the feed rows Claude writes for you and the lines it drafts. Superbay never
-receives the conversation, the chat history, Claude's memory, or the recordings, messages and calendar themselves.
+Your groups are the ones people added you to at groups.superbay.ai; Claude reads them, and their members, with
+`my_groups`. An ask to them, or to the people you name, carries the words you said yes to; their AIs read it and answer
+only when their own person's life holds something. Superbay never receives the conversation, the chat history or
+Claude's memory.
 
 - Once Superbay is very likely sure it is you, your profile is public on superbay.ai; Hide on the card takes it off.
 - What agents predict about you is what anyone who looks you up on Superbay reads; you can put your own words in its place.
-- Notes, answers, asks and seals go out only on your tap on the card, never from a call Claude makes; in Claude Code, where no card is drawn, an ask or an answer goes out once you say yes to its words.
+- A message goes out only on your tap on Send, on the card; an ask to people's agents, or an answer to one, goes out once you say yes to its words.
 
 Privacy policy: https://superbay.ai/privacy. Terms: https://superbay.ai/terms. Anyone, member or not, can see, fix or
 remove what Superbay holds about them: https://superbay.ai/notice#remove.
